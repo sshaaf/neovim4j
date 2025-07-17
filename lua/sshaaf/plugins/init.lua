@@ -10,6 +10,9 @@ return {
   -- Completions for java
   { import = 'sshaaf.plugins.completions' },
   
+  -- Add AI Plugins
+  { import = 'sshaaf.plugins.ai' },
+  
     -- java plugin setup
   { import = 'sshaaf.plugins.java' },
   {
