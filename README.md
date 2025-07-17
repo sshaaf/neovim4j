@@ -46,19 +46,15 @@ The **Leader key** is set to `<Space>`. It acts as a prefix for custom shortcuts
 ### Basic Keybindings for Beginners
 
 - **Fuzzy Search (Telescope):**
-  - `<leader>ff` — Find files
-  - `<leader>fg` — Live grep (search text in files)
-  - `<leader>fb` — List open buffers
+  - `<leader>fp` — Find files
+  - `<leader>fr` — recent files
+  - `<leader>fs` — live grep
 
 - **File Explorer (Nvim-tree):**
-  - `<leader>e` — Toggle file explorer
+  - `<leader>ne` — Toggle file explorer
 
 - **Terminal (ToggleTerm):**
-  - `<leader>tt` — Open terminal
-
-- **Buffers:**
-  - `<leader>bb` — List buffers
-  - `<leader>bd` — Delete buffer
+  - `<leader>CTRL+7` — Open terminal
 
 - **Gradle Build (if configured):**
   - `<leader>gb` — Run Gradle build
