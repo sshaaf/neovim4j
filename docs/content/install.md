@@ -5,23 +5,40 @@ bookToc: true
 ---
 
 # How to Install
-Before starting, ensure you have:
-- [Neovim](https://neovim.io/doc/install/) installed (v0.9+)
-- JDK installed (Java 11 or later) , (I suggest use [SDKMan](https://sdkman.io/install/))
-- This configuration installed at `~/.config/nvim`
+
+## Prerequisites
+
+Before starting, ensure you have the following installed:
+
+### Required
+- [Neovim](https://neovim.io/doc/install/) v0.11+ (earlier versions may work but are untested)
+- [Git](https://git-scm.com/) - for plugin management
+- JDK 11 or later - [SDKMan](https://sdkman.io/install/) is recommended for Java installation
+- [ripgrep (rg)](https://github.com/BurntSushi/ripgrep) - for Telescope file searching
+- [fd](https://github.com/sharkdp/fd) - for Telescope extended file finding capabilities
 - A [Nerd Font](https://www.nerdfonts.com/) installed and configured in your terminal
 
 ## First Time Setup
 
-1. Open Neovim for the first time:
+1. Clone this configuration to your Neovim config directory:
+```bash
+git clone <your-repo-url> ~/.config/nvim
+```
+
+2. Open Neovim for the first time:
 ```bash
 nvim
 ```
 
-2. Lazy.nvim will automatically install all plugins. Wait for installation to complete.
+3. Lazy.nvim will automatically:
+   - Install all plugins
+   - Install the Java language server (jdtls) via Mason
+   
+   Wait for all installations to complete (you'll see progress notifications).
 
-3. Install the Java language server (jdtls):
+4. Verify installation by running:
 ```vim
-:Mason
+:checkhealth
 ```
-Navigate to `jdtls` and press `i` to install. Press `q` to quit Mason.
+
+All checks should pass except for optional warnings (which can be ignored).
