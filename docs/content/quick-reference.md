@@ -6,6 +6,16 @@ bookToc: true
 
 # Development Quick Reference
 
+## Quick Access to Keybindings
+
+**Don't remember a keybinding?** Just press `<Space>` and wait a moment - which-key will show all available commands organized by category!
+
+| Key | Action |
+|-----|--------|
+| `<Space>` (wait) | Show all keybindings automatically |
+| `<Space>?` | Show all keybindings |
+| `<Space><Space>` | Show all keybindings |
+
 ## Essential Keybindings
 
 ### Common (All Languages)
@@ -14,10 +24,13 @@ bookToc: true
 | Key | Action |
 |-----|--------|
 | `<Space>ne` | Toggle file explorer |
-| `<Space>fp` | Find files |
+| `<Space>nf` | Toggle file explorer on current file |
+| `<Space>nc` | Collapse file explorer |
+| `<Space>nr` | Refresh file explorer |
+| `<Space>ff` or `<Space>fp` | Find files |
 | `<Space>fr` | Recent files |
-| `<Space>fs` | Search in files (grep) |
-| `<Space>fb` | Switch buffers |
+| `<Space>fs` | Search in files (live grep) |
+| `<Space>fw` | Find string under cursor |
 
 ### UI Customization
 | Key | Action |
@@ -39,10 +52,12 @@ bookToc: true
 |-----|--------|
 | `<Space>ca` | Code actions (generate, imports, etc) |
 | `<Space>rn` | Rename symbol |
+| `<Space>nh` | Clear search highlights |
 | `<C-Space>` | Trigger completion |
 | `<C-j>` | Next completion item |
 | `<C-k>` | Previous completion item |
 | `<CR>` | Accept completion |
+| `<C-c>` | Copy to clipboard (visual mode) |
 
 ### Diagnostics (Errors/Warnings)
 | Key | Action |
@@ -81,6 +96,27 @@ When editing Cargo.toml files:
 | `<Space>di` | Step into |
 | `<Space>do` | Step out |
 
+### Window Management
+| Key | Action |
+|-----|--------|
+| `<Space>sv` | Split window vertically |
+| `<Space>sh` | Split window horizontally |
+| `<Space>se` | Make splits equal size |
+| `<Space>sx` | Close current split |
+| `<Space>h` | Move cursor to left window |
+| `<Space>j` | Move cursor to bottom window |
+| `<Space>k` | Move cursor to top window |
+| `<Space>l` | Move cursor to right window |
+
+### Tab Management
+| Key | Action |
+|-----|--------|
+| `<Space>to` | Open new tab |
+| `<Space>tx` | Close current tab |
+| `<Space>tn` | Go to next tab |
+| `<Space>tp` | Go to previous tab |
+| `<Space>tf` | Open current buffer in new tab |
+
 ### Buffer Management
 | Key | Action |
 |-----|--------|
@@ -88,15 +124,13 @@ When editing Cargo.toml files:
 | `<S-Tab>` | Previous buffer |
 | `:bd` | Close buffer |
 
-### Terminal
+### Terminal & Git
 | Key | Action |
 |-----|--------|
 | `<C-7>` | Toggle terminal |
 | `<C-\><C-n>` | Exit terminal mode |
 | `i` | Enter terminal mode |
-| `<Space>gb` | Run Gradle build |
-| `<Space>gc` | Run Gradle compile |
-| `<Space>gg` | Open Lazygit |
+| `<Space>gg` | Open Lazygit (git TUI) |
 
 ### AI (CodeCompanion with Ollama)
 | Key | Action |
@@ -199,11 +233,13 @@ When editing Cargo.toml files:
 - `?` - Help
 
 ## Tips
-- Leader key is `<Space>`
+- **Leader key is `<Space>`** - Press it and wait to see all available commands!
 - Use `:Mason` to manage LSP servers
 - Use `:Lazy` to manage plugins
 - Use `:checkhealth` to diagnose issues
 - Use `:help <topic>` for help
+- Press `<Space>?` or `<Space><Space>` anytime to see keybinding reference
+- Lazygit (`<Space>gg`) provides a visual interface for all git operations
 
 ---
 For detailed guide, see [Getting Started]({{< relref "/getting-started" >}})

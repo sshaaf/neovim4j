@@ -37,4 +37,4 @@ keymap.set("v", "<C-c>", [["+y]])
 -- vim.keymap.set('n', '<leader>gc', '<Cmd>ToggleTerm gradle compileJava<CR>', { desc = "Gradle compile" })
 
 --Lazygit
-vim.keymap.set('n', '<leader>gg', '<Cmd>ToggleTerm lazygit<CR>', { desc = "Open Lazygit" })
+vim.keymap.set('n', '<leader>gg', '<Cmd>ToggleTerm cmd="lazygit"<CR>', { desc = "Open Lazygit" })

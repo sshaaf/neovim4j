@@ -54,6 +54,12 @@ return {
                 'venv',
               },
             },
+            -- Disable semantic tokens to use treesitter highlighting
+            semanticHighlighting = {
+              strings = {
+                enable = false,
+              },
+            },
           },
         },
       },
@@ -77,10 +83,11 @@ return {
     'saecki/crates.nvim',
     event = { 'BufRead Cargo.toml' },
     opts = {
-      completion = {
-        cmp = {
-          enabled = true,
-        },
+      lsp = {
+        enabled = true,
+        actions = true,
+        completion = true,
+        hover = true,
       },
     },
   },
@@ -138,8 +145,11 @@ return {
         'saecki/crates.nvim',
         event = { 'BufRead Cargo.toml' },
         opts = {
-          completion = {
-            cmp = { enabled = true },
+          lsp = {
+            enabled = true,
+            actions = true,
+            completion = true,
+            hover = true,
           },
         },
       },

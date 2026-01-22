@@ -11,6 +11,12 @@ Feel free to use this as a reference or starting point for your own Neovim setup
 
 ## Features
 
+### Quick Reference
+**Don't know the keybindings?** Just press `<Space>` and wait! The which-key popup shows all available commands organized by category.
+- Press `<Space>?` or `<Space><Space>` anytime to see all keybindings
+- Organized groups: Find, File Explorer, Split Windows, Tabs, Git, Code actions, and more
+- See [Quick Reference](docs/content/quick-reference.md) for complete list
+
 ### Language Support
 - **Java:** Full jdtls LSP integration with debugging (DAP) and testing support
 - **Rust:** rustaceanvim for advanced LSP features, crates.nvim for Cargo.toml management, codelldb debugger, and neotest integration
@@ -22,16 +28,35 @@ Feel free to use this as a reference or starting point for your own Neovim setup
 - **Theme Switcher:** Telescope-based theme picker with live preview and persistence (8 themes: tokyonight, ayu_dark, catppuccin, gruvbox, onedark, nord, nightfox, kanagawa)
 - **File Explorer:** Nvim-tree with custom icons and keymaps
 - **Fuzzy Finder:** Telescope for fast file and text search
-- **Terminal Integration:** ToggleTerm for embedded terminals
-- **Syntax Highlighting:** Treesitter with support for Java, Rust, TOML, RON, XML, JSON, Markdown, and more
+- **Terminal Integration:** ToggleTerm for embedded terminals with Lazygit support
+- **Syntax Highlighting:** Treesitter-based syntax highlighting (with LSP semantic tokens disabled for colorful highlighting)
 - **Plugin Management:** Uses lazy.nvim for fast, lazy-loaded plugins
+
+## Quick Start
+
+1. **Open a file:** `nvim yourfile.rs` or `nvim YourClass.java`
+2. **Press `<Space>`** and wait to see all available keybindings
+3. **Essential keybindings:**
+   - `<Space>ne` - Toggle file explorer
+   - `<Space>ff` - Find files
+   - `<Space>fs` - Search in files
+   - `<Space>ct` - Change theme
+   - `<Space>gg` - Open Lazygit
+   - `Ctrl+7` - Toggle terminal
+   - `gd` - Go to definition
+   - `K` - Show documentation
+   - `<Space>ca` - Code actions
+
+See [Quick Reference](docs/content/quick-reference.md) for complete keybinding list.
 
 ## Structure
 
 The configuration is organized in a modular structure:
+- `lua/neovim4j/core/keymaps.lua` - General keybindings
 - `lua/neovim4j/plugins/java.lua` - Java-specific tooling
 - `lua/neovim4j/plugins/rust.lua` - Rust-specific tooling
 - `lua/neovim4j/plugins/lsp/lspconfig.lua` - General LSP configuration
+- `lua/neovim4j/plugins/which-key.lua` - Keybinding reference popup
 - `lua/neovim4j/plugins/` - Other plugin configurations
 
 > **Note:** The `neovim4j` directory name is historical from when this was Java-focused. It now supports multiple languages.
