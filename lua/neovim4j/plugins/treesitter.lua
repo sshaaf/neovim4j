@@ -17,6 +17,9 @@ return {
 			-- ensure these language parsers are installed
 			ensure_installed = {
 				"java",        -- Java language support
+				"rust",        -- Rust language support
+				"toml",        -- For Cargo.toml files
+				"ron",         -- Rusty Object Notation
 				"lua",         -- For nvim config editing
 				"vim",         -- For nvim config editing
 				"vimdoc",      -- For vim help docs

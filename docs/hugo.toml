@@ -1,6 +1,6 @@
-baseURL = "https://shaaf.dev/neovim4j/"
+baseURL = "https://shaaf.dev/neovim/"
 languageCode = "en-us"
-title = "Neovim4j - Java Development in Neovim"
+title = "Development using Neovim"
 theme = "hugo-book"
 
 # Enable Git info
@@ -39,13 +39,13 @@ enableGitInfo = true
     weight = 4
   [[menu.main]]
     name = "GitHub"
-    url = "https://shaaf.dev/neovim4j"
+    url = "https://shaaf.dev/neovim"
     weight = 5
 
 # Params for hugo-book theme
 [params]
   # Set source repository location
-  BookRepo = "https://shaaf.dev/neovim4j"
+  BookRepo = "https://shaaf.dev/neovim"
 
   # Enable search
   BookSearch = true

@@ -5,9 +5,11 @@ bookCollapseSection: false
 bookToc: true
 ---
 
-# Neovim4j Tutorial
+# Java Development Tutorial
 
-Welcome to the Neovim4j tutorial! This step-by-step guide will teach you everything you need to know to become productive with Java development in Neovim.
+Welcome to the Java development tutorial! This step-by-step guide will teach you everything you need to know to become productive with Java development in Neovim.
+
+> **Note:** This tutorial focuses on Java. For Rust-specific features and workflows, see the [Rust Development Guide]({{< relref "/rust-guide" >}}).
 
 ## What You'll Learn
 

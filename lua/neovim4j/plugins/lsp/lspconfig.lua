@@ -67,6 +67,6 @@ return {
     end
 
     -- Note: nvim-java handles jdtls LSP server setup automatically
-    -- No need to configure LSP servers here for Java-only setup
+    -- Note: rustaceanvim handles rust-analyzer LSP server setup automatically
   end,
 }

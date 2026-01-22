@@ -6,7 +6,7 @@ bookToc: true
 
 # Plugin Dependencies
 
-This page lists all the plugins that power the Neovim4J configuration, including their versions and descriptions.
+This page lists all the plugins that power this Neovim configuration, including their versions and descriptions.
 
 ## Core Infrastructure
 
@@ -46,6 +46,15 @@ This page lists all the plugins that power the Neovim4J configuration, including
 - **Version**: f73731b543f5971e0da9665eb1d7ceffe1fde71f
 - **Description**: Extensions for the built-in Language Server Protocol support for eclipse.jdt.ls (Java language server)
 - **Repository**: [mfussenegger/nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls)
+
+### rustaceanvim
+- **Version**: ^5
+- **Description**: Advanced Rust language support with rust-analyzer integration, code actions, and debugging
+- **Repository**: [mrcjkb/rustaceanvim](https://github.com/mrcjkb/rustaceanvim)
+
+### crates.nvim
+- **Description**: LSP support for Cargo.toml with completion, version checking, and inline documentation
+- **Repository**: [saecki/crates.nvim](https://github.com/saecki/crates.nvim)
 
 ### neodev.nvim
 - **Version**: 46aa467dca16cf3dfe27098042402066d2ae242d
@@ -189,12 +198,16 @@ This page lists all the plugins that power the Neovim4J configuration, including
 - **Description**: Maximize and restore current window in Vim
 - **Repository**: [szw/vim-maximizer](https://github.com/szw/vim-maximizer)
 
-## Debugging
+## Debugging & Testing
 
 ### nvim-dap
 - **Version**: cdfd55a133f63228c55f91378f12908cb2a78ded
 - **Description**: Debug Adapter Protocol client implementation for Neovim
 - **Repository**: [mfussenegger/nvim-dap](https://github.com/mfussenegger/nvim-dap)
+
+### neotest
+- **Description**: Testing framework for Neovim with support for multiple languages (includes rustaceanvim adapter for Rust)
+- **Repository**: [nvim-neotest/neotest](https://github.com/nvim-neotest/neotest)
 
 ## AI Assistant
 

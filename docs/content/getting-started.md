@@ -4,9 +4,9 @@ weight: 2
 bookToc: true
 ---
 
-# Getting Started with Neovim4j
+# Getting Started
 
-Welcome to Neovim4j! This guide will help you get started with Java development in Neovim.
+Welcome! This guide will help you get started with Java and Rust development in Neovim.
 
 ### Just Want to Start Coding?
 
@@ -39,6 +39,8 @@ The tutorial covers:
 
 Get started with these core keybindings:
 
+### General Navigation & Editing
+
 | Action | Keybinding |
 |--------|------------|
 | File explorer | `<Space>ne` |
@@ -49,8 +51,20 @@ Get started with these core keybindings:
 | Show documentation | `K` |
 | Code actions | `<Space>ca` |
 | Rename symbol | `<Space>rn` |
-| Run tests | `<Space>jt` |
 | Debug breakpoint | `<Space>db` |
+
+### Java-Specific
+
+| Action | Keybinding |
+|--------|------------|
+| Run tests | `<Space>jt` |
+
+### Rust-Specific
+
+| Action | Keybinding |
+|--------|------------|
+| Rust code actions | `<Space>cR` |
+| Rust debuggables | `<Space>dr` |
 
 **Note:** `<Space>` is the leader key (spacebar).
 

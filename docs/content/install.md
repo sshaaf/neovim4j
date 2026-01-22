@@ -10,19 +10,28 @@ bookToc: true
 
 Before starting, ensure you have the following installed:
 
-### Required
+### Required (All Users)
 - [Neovim](https://neovim.io/doc/install/) v0.11+ (earlier versions may work but are untested)
 - [Git](https://git-scm.com/) - for plugin management
-- JDK 11 or later - [SDKMan](https://sdkman.io/install/) is recommended for Java installation
 - [ripgrep (rg)](https://github.com/BurntSushi/ripgrep) - for Telescope file searching
 - [fd](https://github.com/sharkdp/fd) - for Telescope extended file finding capabilities
 - A [Nerd Font](https://www.nerdfonts.com/) installed and configured in your terminal
+
+### Language-Specific
+
+**For Java Development:**
+- JDK 11 or later - [SDKMan](https://sdkman.io/install/) is recommended for Java installation
+
+**For Rust Development:**
+- [Rust toolchain](https://rustup.rs/) - Install via `rustup`
+- rust-analyzer - Will be auto-installed via Mason on first use
+- codelldb - Will be auto-installed via Mason for debugging
 
 ## First Time Setup
 
 1. Clone this configuration to your Neovim config directory:
 ```bash
-git clone https://github.com/sshaaf/neovim4j.git ~/.config/nvim
+git clone https://github.com/sshaaf/neovim.git ~/.config/nvim
 ```
 
 2. Open Neovim for the first time:
@@ -31,9 +40,11 @@ nvim
 ```
 
 3. Lazy.nvim will automatically:
-   - Install all plugins including `nvim-jdtls` (Java LSP client)
-   - Install the Java language server (jdtls) via Mason
-   - Set up debugging support with nvim-dap
+   - Install all plugins
+   - Java: Install `nvim-jdtls` and `jdtls` language server via Mason
+   - Rust: Install `rustaceanvim`, `crates.nvim`, `rust-analyzer`, and `codelldb` via Mason
+   - Set up debugging support with nvim-dap for both languages
+   - Configure neotest for testing
 
    Wait for all installations to complete (you'll see progress notifications).
 
@@ -46,7 +57,7 @@ All checks should pass except for optional warnings (which can be ignored).
 
 ## Optional: AI Assistant Setup
 
-Neovim4j includes **CodeCompanion.nvim** for AI-assisted coding using self-hosted LLMs via Ollama.
+This configuration includes **CodeCompanion.nvim** for AI-assisted coding using self-hosted LLMs via Ollama.
 
 ### Installing Ollama
 

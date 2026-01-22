@@ -11,6 +11,9 @@ return {
   -- Java plugin setup (includes LSP, DAP, Testing, and Completion)
   { import = 'neovim4j.plugins.java' },
 
+  -- Rust plugin setup (includes LSP, DAP, Testing, and Completion)
+  { import = 'neovim4j.plugins.rust' },
+
   -- Utility plugins
   "nvim-lua/plenary.nvim", -- lua functions that many plugins use
   "christoomey/vim-tmux-navigator", -- tmux & split window navigation
